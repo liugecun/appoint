@@ -1,0 +1,115 @@
+/*头部*/
+.dt-header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+    border-bottom: 1px solid #ccc;
+    background-color: #FFF;
+}
+.dt-header .dt-tg{
+	float: left;
+	width: 20%;
+	padding: 0.7rem 0;
+	color: #333;
+	font-size: 1rem;
+	line-height: 1.3rem;
+	text-align: center;
+}
+.dt-tg>span{
+	display: block;
+}
+
+.dt-header .dt-tg.tg-act{
+	position: relative;
+	background-color: #206aa0;
+}
+.dt-header .dt-tg.tg-act:after{
+	content: '';
+	display: block;
+	position: absolute;
+    bottom: -47%;
+    left: 33%;
+	width: 0;
+	height: 0;
+	border: 1rem solid transparent;
+	border-top-color: #206aa0;
+}
+.dt-header .dt-tg.tg-act span{
+	color: #FFF;
+}
+/*内容*/
+.dt-main{
+	width: 100%;
+	padding: 18% 5% 10%;
+}
+.dt-main .dt-hour{
+	float: left;
+	width: 32%;
+	border: 2px solid #333;
+	text-align: center;
+    line-height: 1.8rem;
+    font-size: 1.5rem;
+	padding: 1rem 0;
+	margin-right: 2%;
+	margin-bottom: 1rem;
+	border-radius: 5px;
+}
+.dt-main .dt-hour:nth-child(3n){
+	margin-right: 0;
+}
+
+.dt-main .dt-hour.hour-act{
+	position: relative;
+	border: 2px solid #206aa0;
+}
+.dt-main .dt-hour.hour-act:after{
+	content: '';
+	width: 1.5rem;
+	height: 1.5rem;
+	position: absolute;
+    bottom: 0%;
+    right: 1%;
+	background: url("../images/right.png") no-repeat center center;
+	background-size: 100% 100%;
+}
+.dt-main li.dt-hour-disabled{
+	border: 2px solid #afafaf;
+	opacity: 0.5;
+	color: #666;
+}
+/*底部*/
+.dt-footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+    border-top: 1px solid #e4e4e4;
+}
+.dt-footer .dt-sec{
+	float: left;
+	width: 60%;
+	color: #206aa0;
+    text-align: left;
+    line-height: 1.6rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 1.6rem 0 0 1rem;
+}
+.dt-footer .dt-sec span:first-child{
+	margin-right: 0.5rem;
+}
+.dt-footer button{
+	float: right;
+	width: 40%;
+	color: #FFF;
+	text-align: center;
+    line-height: 1.8rem;
+    font-size: 1.6rem;
+	background-color: #206aa0;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+	padding: 1.5rem 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}

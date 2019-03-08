@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>上海伊莱美医疗美容医院</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  	<link href="favicon.ico" rel="SHORTCUT ICON">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/list.css">
+    <script src="js/zepto.min.js"></script>
+    <script src="js/touch.js"></script>
+    <script src="js/base.js"></script>
+</head>
+<body>
+    <header class="se-header">
+        <h1 class="se-title">选择医生</h1>
+        <p class="se-sur">选择你最喜欢的医生为你服务</p>
+    </header>
+    <section class="se-content">
+      <div class="se-main clearfix">
+        <div class="se-left">
+          <img src="images/list_01.jpg">          
+        </div>
+        <div class="se-right">
+          <p class="se-name">玮琪</p>
+          <p class="se-mot">匠心</p>
+          <p class="se-price">￥39.8</p>
+          <div class="se-btn">
+            <button>立即预约</button>
+            <span class="se-late">最早可预约<span>10：00</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="se-main clearfix">
+        <div class="se-left">
+          <img src="images/list_02.jpg">          
+        </div>
+        <div class="se-right">
+          <p class="se-name">玮琪</p>
+          <p class="se-mot">匠心</p>
+          <p class="se-price">￥39.8</p>
+          <div class="se-btn">
+            <button>立即预约</button>
+            <span class="se-late">最早可预约<span>10：00</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="se-main clearfix">
+        <div class="se-left">
+          <img src="images/list_03.jpg">          
+        </div>
+        <div class="se-right">
+          <p class="se-name">玮琪</p>
+          <p class="se-mot">匠心</p>
+          <p class="se-price">￥39.8</p>
+          <div class="se-btn">
+            <button>立即预约</button>
+            <span class="se-late">最早可预约<span>10：00</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script> 	
+      	// 获取本地时间
+    		var myDate = new Date();
+        var thisHour = myDate.getHours();               //小时
+        console.log(thisHour)
+      	$(".se-late span").text((thisHour+1)+" : 00")
+    </script>
+</body>
+</html>
